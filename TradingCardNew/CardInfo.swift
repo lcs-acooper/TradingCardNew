@@ -10,7 +10,7 @@ import SwiftUI
 struct CardInfo: View {
     //MARK: Stored Values
     let colors = Gradient(colors: [.blue, .purple, .red])
-    let backGround: String
+    let cardImage: String
     //MARK: Computed
     var body: some View {
       
@@ -21,14 +21,13 @@ struct CardInfo: View {
                     .ignoresSafeArea()
             Rectangle()
                 .foregroundColor(.red)
-                    .padding(20)
+                    .padding(15)
             Rectangle()
                 .foregroundColor(.green)
-                    .padding(40)
-            Image(backGround)
+                    .padding(35)
+            Image(cardImage)
                 .resizable()
-                .scaledToFit()
-                .frame(width: 313)
+                .padding(45)
             
         }
         
@@ -38,5 +37,5 @@ struct CardInfo: View {
 }
 
 #Preview {
-    CardInfo(backGround: "Forest")
+    CardInfo(cardImage: "Forest")
 }

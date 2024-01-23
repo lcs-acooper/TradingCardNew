@@ -15,7 +15,7 @@ struct ContentView: View {
                 
                 List {
                     NavigationLink {
-                        CardInfo(backGround: "Forest")
+                        CardInfo(cardImage: "")
                     } label: {
                         ListItemView(
                             effectName: "Mr. Reddon",
@@ -25,7 +25,7 @@ struct ContentView: View {
                     }
                     
                     NavigationLink {
-                        CardInfo(backGround: "Forest")
+                        CardInfo(cardImage: "")
                     } label: {
                         ListItemView(
                             effectName: "Alecia",
