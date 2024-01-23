@@ -9,13 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            
+            VStack(alignment: .leading) {
+                
+                List {
+                    NavigationLink {
+                        CardInfo()
+                    } label: {
+                        ListItemView(
+                            effectName: "Mr. Reddon",
+                            pageReference: "English Teacher, Rm23",
+                            teacher: "Reddon"
+                        )
+                    }
+                    
+                    NavigationLink {
+                        CardInfo()
+                    } label: {
+                        ListItemView(
+                            effectName: "Alecia",
+                            pageReference: "OE Assistant, Outside",
+                            teacher: "Alecia"
+                        )
+                    }
+                    
+                    
+                    
+                    
+                
+                }
+                
+                
+            }
+            .navigationTitle("Teacher Trading Cards")
         }
-        .padding()
     }
 }
 

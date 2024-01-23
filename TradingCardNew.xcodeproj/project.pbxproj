@@ -11,6 +11,8 @@
 		DB474B342B5EAB4500D20A84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB474B332B5EAB4500D20A84 /* ContentView.swift */; };
 		DB474B362B5EAB4700D20A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB474B352B5EAB4700D20A84 /* Assets.xcassets */; };
 		DB474B392B5EAB4700D20A84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB474B382B5EAB4700D20A84 /* Preview Assets.xcassets */; };
+		DB474B4B2B5EAE7A00D20A84 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB474B4A2B5EAE7A00D20A84 /* ListView.swift */; };
+		DB474B4F2B5EB9AD00D20A84 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB474B4E2B5EB9AD00D20A84 /* CardInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DB474B332B5EAB4500D20A84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB474B352B5EAB4700D20A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB474B382B5EAB4700D20A84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB474B4A2B5EAE7A00D20A84 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DB474B4E2B5EB9AD00D20A84 /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				DB474B312B5EAB4500D20A84 /* TradingCardNewApp.swift */,
 				DB474B332B5EAB4500D20A84 /* ContentView.swift */,
 				DB474B352B5EAB4700D20A84 /* Assets.xcassets */,
+				DB474B4E2B5EB9AD00D20A84 /* CardInfo.swift */,
+				DB474B4A2B5EAE7A00D20A84 /* ListView.swift */,
 				DB474B372B5EAB4700D20A84 /* Preview Content */,
 			);
 			path = TradingCardNew;
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB474B4F2B5EB9AD00D20A84 /* CardInfo.swift in Sources */,
+				DB474B4B2B5EAE7A00D20A84 /* ListView.swift in Sources */,
 				DB474B342B5EAB4500D20A84 /* ContentView.swift in Sources */,
 				DB474B322B5EAB4500D20A84 /* TradingCardNewApp.swift in Sources */,
 			);
