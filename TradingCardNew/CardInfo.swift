@@ -14,28 +14,41 @@ struct CardInfo: View {
     //MARK: Computed
     var body: some View {
       
-        ZStack {
-            //LCS Green rectangle
-            Rectangle()
-                .foregroundColor(.green)
-                    .ignoresSafeArea()
-            Rectangle()
-                .foregroundColor(.red)
-                    .padding(15)
-            Rectangle()
-                .foregroundColor(.green)
-                    .padding(35)
-            Image(cardImage)
-                .resizable()
-                .padding(45)
+        VStack {
+            
+            
+            ZStack {
+                //LCS Green rectangle
+                Rectangle()
+                    .foregroundColor(.green)
+                Rectangle()
+                    .foregroundColor(.red)
+                    .padding(25)
+                Rectangle()
+                    .foregroundColor(.green)
+                    .padding(50)
+                
+                
+            }
+            
+            
             
         }
-        
+        .navigationTitle("Detail")
+        .navigationBarTitleDisplayMode(.inline)
         
        
     }
 }
 
 #Preview {
-    CardInfo(cardImage: "Forest")
+    NavigationStack {
+        CardInfo(cardImage: "Reddon")
+    }
+    
+}
+
+#Preview {
+    
+    ContentView()
 }
