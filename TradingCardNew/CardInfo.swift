@@ -10,7 +10,8 @@ import SwiftUI
 struct CardInfo: View {
     //MARK: Stored Values
     let cardName: String
-    let colors = Gradient(colors: [.blue, .purple, .red])
+    let cardSubName: String
+    let colors = Gradient(colors: [.blue, .purple, .blue])
     let cardImage: String
     let cardText: String
     let strength: String
@@ -37,27 +38,35 @@ struct CardInfo: View {
                 VStack {
                     
                     //Teacher Edsby Photo
-                    Image(cardImage)
-                        .resizable()
-                        .scaledToFit()
+                    ZStack {
+                        Image(cardImage)
+                            .resizable()
+                            .scaledToFit()
                         .frame(width: 300)
+                    }
                   
                     //First name of teacher
                     Text(cardName)
-                    .bold()
-                    .foregroundStyle(colors)
-                    .font(Font.system(size: 76, weight: .medium))
+                        .bold()
+                      
+                        .font(Font.system(size: 76, weight: .medium))
                     //Card type rarity.
-                    Text(cardName)
-                    .bold()
-                    .foregroundStyle(colors)
-                    .font(Font.system(size: 40, weight: .medium))
+                    Text(cardSubName)
+                        .bold()
+                        .foregroundStyle(colors)
+                        .font(Font.system(size: 32, weight: .medium))
+                        .background {
+                    RoundedRectangle(cornerRadius: 5)
+                    .fill(Color.red)
+                    }
                     
                     ZStack {
                         //Text Box for information
                         Rectangle()
                             .frame(width: 300, height: 200)
                             .foregroundStyle(Color(.white))
+                            
+                        
                         VStack {
                             HStack {
                                 Text(strength)
@@ -94,7 +103,16 @@ struct CardInfo: View {
 
 #Preview {
     NavigationStack {
-       CardInfo(cardName: "Harrison", cardImage: "Reddon", cardText: "Harrison is a teacher by day, musician by night. Harrison lives and is a staff member for Cooper house. ", strength: "82/100 Strength", speed: "82/100 Speed", agility: "82/100 Agility", inteligence: "82/100 Inteligence")
+        CardInfo(
+            cardName: "Harrison",
+            cardSubName: "Rare Card (S+) tier",
+            cardImage: "Reddon",
+            cardText: "Harrison is a teacher by day, musician by night. Harrison lives and is a staff member for Cooper house. Truely an international man of mystery",
+            strength: "85/100 Strength",
+            speed: "76/100 Speed",
+            agility: "78/100 Agility",
+            inteligence: "85/100 Inteligence"
+        )
     }
     
 }
