@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1A08FC2B60C00600830E75 /* TitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1A08FB2B60C00600830E75 /* TitlesView.swift */; };
 		DB474B322B5EAB4500D20A84 /* TradingCardNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB474B312B5EAB4500D20A84 /* TradingCardNewApp.swift */; };
 		DB474B342B5EAB4500D20A84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB474B332B5EAB4500D20A84 /* ContentView.swift */; };
 		DB474B362B5EAB4700D20A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB474B352B5EAB4700D20A84 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB1A08FB2B60C00600830E75 /* TitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesView.swift; sourceTree = "<group>"; };
 		DB474B2E2B5EAB4500D20A84 /* TradingCardNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCardNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB474B312B5EAB4500D20A84 /* TradingCardNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardNewApp.swift; sourceTree = "<group>"; };
 		DB474B332B5EAB4500D20A84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				DB474B352B5EAB4700D20A84 /* Assets.xcassets */,
 				DB474B4E2B5EB9AD00D20A84 /* CardInfo.swift */,
 				DB474B4A2B5EAE7A00D20A84 /* ListView.swift */,
+				DB1A08FB2B60C00600830E75 /* TitlesView.swift */,
 				DB474B372B5EAB4700D20A84 /* Preview Content */,
 			);
 			path = TradingCardNew;
@@ -146,6 +149,7 @@
 				DB474B4F2B5EB9AD00D20A84 /* CardInfo.swift in Sources */,
 				DB474B4B2B5EAE7A00D20A84 /* ListView.swift in Sources */,
 				DB474B342B5EAB4500D20A84 /* ContentView.swift in Sources */,
+				DB1A08FC2B60C00600830E75 /* TitlesView.swift in Sources */,
 				DB474B322B5EAB4500D20A84 /* TradingCardNewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

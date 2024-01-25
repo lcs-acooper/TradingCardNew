@@ -15,7 +15,15 @@ struct ContentView: View {
                 
                 List {
                     NavigationLink {
-                        CardInfo(cardImage: "")
+                        CardInfo(
+                            cardName: "Harrison",
+                            cardImage: "Reddon",
+                            cardText: "Singerby day rocker by night",
+                            strength: "",
+                            speed: "",
+                            agility: "",
+                            inteligence: ""
+                        )
                     } label: {
                         ListItemView(
                             effectName: "Mr. Reddon",
@@ -25,7 +33,15 @@ struct ContentView: View {
                     }
                     
                     NavigationLink {
-                        CardInfo(cardImage: "")
+                        CardInfo(
+                            cardName: "Alecia",
+                            cardImage: "Alecia",
+                            cardText: "fortnite lover",
+                            strength: "",
+                            speed: "",
+                            agility: "",
+                            inteligence: ""
+                        )
                     } label: {
                         ListItemView(
                             effectName: "Alecia",
