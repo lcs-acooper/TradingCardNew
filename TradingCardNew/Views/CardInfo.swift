@@ -9,15 +9,8 @@ import SwiftUI
 
 struct CardInfo: View {
     //MARK: Stored Values
-    let cardName: String
-    let cardSubName: String
-    let colors = Gradient(colors: [.blue, .purple, .blue])
-    let cardImage: String
-    let cardText: String
-    let strength: String
-    let speed: String
-    let agility: String
-    let inteligence: String
+    let teacher: TradingCard
+    
     //MARK: Computed
     var body: some View {
       
@@ -39,21 +32,21 @@ struct CardInfo: View {
                     
                     //Teacher Edsby Photo
                     ZStack {
-                        Image(cardImage)
+                        Image(teacher.cardImage)
                             .resizable()
                             .scaledToFit()
                         .frame(width: 300)
                     }
                   
                     //First name of teacher
-                    Text(cardName)
+                    Text(teacher.cardName)
                         .bold()
                       
                         .font(Font.system(size: 76, weight: .medium))
                     //Card type rarity.
-                    Text(cardSubName)
+                    Text(teacher.cardSubName)
                         .bold()
-                        .foregroundStyle(colors)
+                        .foregroundStyle(teacher.colors)
                         .font(Font.system(size: 32, weight: .medium))
                         .background {
                     RoundedRectangle(cornerRadius: 5)
@@ -69,16 +62,16 @@ struct CardInfo: View {
                         
                         VStack {
                             HStack {
-                                Text(strength)
+                                Text(teacher.strength)
                                     
-                                Text(speed)
+                                Text(teacher.speed)
                                 
-                                Text(agility)
+                                Text(teacher.agility)
                                     
-                                Text(inteligence)
+                                Text(teacher.inteligence)
                             }
                             .padding(5)
-                            Text(cardText)
+                            Text(teacher.cardText)
                                 .bold()
                         }
                     }
@@ -103,21 +96,16 @@ struct CardInfo: View {
 
 #Preview {
     NavigationStack {
-        CardInfo(
-            cardName: "Harrison",
-            cardSubName: "Rare Card (S+) tier",
-            cardImage: "Reddon",
-            cardText: "Harrison is a teacher by day, musician by night. Harrison lives and is a staff member for Cooper house. Truely an international man of mystery",
-            strength: "85/100 Strength",
-            speed: "76/100 Speed",
-            agility: "78/100 Agility",
-            inteligence: "85/100 Inteligence"
-        )
+       CardInfo(teacher: gordon)
+        
     }
     
 }
 
 #Preview {
+    NavigationStack {
+       CardInfo(teacher: reddon)
+        
+    }
     
-    ContentView()
 }

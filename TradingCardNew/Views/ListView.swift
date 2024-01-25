@@ -10,15 +10,13 @@ import SwiftUI
 struct ListItemView: View {
     
     // MARK: Stored properties
-    let effectName: String
-    let pageReference: String
-    let teacher: String
+    let teacher: TradingCard
     
     // MARK: Computed properties
     var body: some View {
         HStack {
             
-            Image(teacher)
+            Image(teacher.cardImage)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50)
@@ -26,9 +24,9 @@ struct ListItemView: View {
             
             VStack {
                 VStack(alignment: .leading) {
-                    Text(effectName)
+                    Text(teacher.effectName)
                         .font(.headline)
-                    Text(pageReference)
+                    Text(teacher.pageReference)
                 }
             }
             
@@ -37,9 +35,7 @@ struct ListItemView: View {
 }
 
 #Preview {
-    ListItemView(
-        effectName: "Mr. Reddon",
-        pageReference: "English Teacher",
-        teacher: "Reddon"
-    )
+    ListItemView(teacher: gordon)
+    
+    
 }
