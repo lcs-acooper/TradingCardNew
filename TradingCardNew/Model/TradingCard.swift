@@ -24,6 +24,10 @@ struct TradingCard {
     let teacher: String
 }
 
+
+
+
+
 let gordon = TradingCard(
     cardName: "Gordon",
     cardSubName: "Card (S++) Tier",
@@ -37,6 +41,7 @@ let gordon = TradingCard(
     pageReference: "CS Teacher, Rm36",
     teacher: "Russel"
 )
+
 let reddon = TradingCard(
     cardName: "Harrison",
     cardSubName: "Card (S+) Tier",
@@ -50,6 +55,7 @@ let reddon = TradingCard(
     pageReference: "English Teacher, Rm23",
     teacher: "Reddon"
 )
+
 let alecia = TradingCard(
     cardName: "Alecia",
     cardSubName: "Card (A) Tier",
@@ -63,6 +69,7 @@ let alecia = TradingCard(
     pageReference: "OE Assistant, Outside",
     teacher: "Alecia"
     )
+
 let wilson = TradingCard(
     cardName: "Sam",
     cardSubName: "Card (B) Tier",
@@ -76,6 +83,7 @@ let wilson = TradingCard(
     pageReference: "Geo/OE Teacher, Rm43",
     teacher: "Wilson"
     )
+
 let rory = TradingCard(
     cardName: "Rory",
     cardSubName: "Card (S++) Tier",
@@ -89,6 +97,7 @@ let rory = TradingCard(
     pageReference: "History Teacher, Rm 32",
     teacher: "Rory"
     )
+
 let amy = TradingCard(
     cardName: "Amy",
     cardSubName: "Card (S++) Tier",
@@ -102,3 +111,5 @@ let amy = TradingCard(
     pageReference: "English Teacher, Rm32",
     teacher: "Amy"
     )
+
+let allTeachers = [reddon, alecia, gordon, wilson, rory, amy]

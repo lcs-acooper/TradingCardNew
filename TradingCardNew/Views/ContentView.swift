@@ -15,11 +15,12 @@ struct ContentView: View {
                 
                 
                 //Trading Card for Harrison
-                List {
+                List(allTeachers, id: \.self) { currentTeacher in
+                    
                     NavigationLink {
-                        CardInfo(teacher: reddon)
+                        CardInfo(teacher: currentTeacher)
                     } label: {
-                        ListItemView(teacher: reddon)
+                        ListItemView(teacher: currentTeacher)
                     }
                 //Trading card for Alecia
                     NavigationLink {
