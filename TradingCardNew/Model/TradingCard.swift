@@ -8,7 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct TradingCard {
+struct TradingCard: Identifiable {
+    var id = UUID()
+    
     let cardName: String
     let cardSubName: String
     let colors = Gradient(colors: [.blue, .purple, .blue])
@@ -112,4 +114,4 @@ let amy = TradingCard(
     teacher: "Amy"
     )
 
-let allTeachers = [reddon, alecia, gordon, wilson, rory, amy]
+let allTeachers = [alecia, reddon, gordon, wilson, rory, amy]
